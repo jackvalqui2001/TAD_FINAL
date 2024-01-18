@@ -1,0 +1,289 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Barra de navegacion */
+
+.navbar {
+    background-color: #D12C2C;
+}
+
+.navbar-brand {
+    font-family: 'Roboto Slab', serif;
+}
+
+.logo {
+    width: 200px;
+}
+
+.titulo {
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #D12C2C;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.login .btn {
+    width: 102px;;
+}
+
+#ingresar {
+    background-color: #065293;
+    border-color: #065293;
+}
+
+#ingresar:hover {
+    background-color: #2A6CA4;
+}
+
+.menu img {
+    height: 267px;
+}
+
+.menu .col {
+    height: 310px;
+}
+
+.respuesta {
+    color: #279611;
+}
+
+.cifra {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.form-select {
+    width: 200px;
+}
+
+footer {
+    height: 60px;
+    padding: 10px;
+    color: white;
+    background-color: #D12C2C;
+    margin-top: auto;
+}
+
+.footer-texto {
+    margin: 10px;
+}  
+
+/*Esto es el HTML de Registro*/
+.panel-form {
+    margin-top: 50px;
+    background-color: #E5E5E5;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.registro .btn {
+    width: 118px;
+    margin: 0 4px;
+}
+
+.form-grupo-input {
+	position: relative;
+}
+
+#nombre {
+    /* border: 3px solid transparent; */
+    box-sizing: border-box;
+}
+
+.form-input {
+	width: 100%;
+	background: #fff;
+	border: 3px solid transparent;
+	border-radius: 5px;
+	height: 36px;
+	line-height: 36px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;
+}
+
+.form-input:focus {
+	border: 3px solid #0075FF;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+/* .form-input {
+	border: 3px solid transparent;
+    box-sizing: border-box;
+} */
+
+.form-estado {
+    position: absolute;
+	right: 10px;
+	bottom: 22px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+.form-grupo-correcto .form-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.form-grupo-incorrecto .form-label {
+	color: #bb2929;
+}
+
+.form-grupo-incorrecto .form-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.form-grupo-incorrecto .form-input {
+	border: 3px solid #bb2929;
+}
+
+.popup {
+    /* display: none; */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    background: #2F5F98;
+}
+
+.texto_pop {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.incubadoras {
+    list-style: none;
+    margin-top: 3vw;
+    padding: 20px 0;
+    display: block;
+}
+
+.incubadora {
+    text-decoration: none;
+    height: 12vw;
+    width: 12vw;
+    min-height: 120px;
+    min-width: 120px;
+    margin: 1vw 1vw 3vw;
+    padding: 0 20px;
+    display: inline-block;
+    position: relative;
+    vertical-align: baseline;
+    background-color: #E5E5E5;
+    border-radius: 25px;
+    transition: all 0.3s ease-in;
+}
+
+.incubadora:hover {
+    background-color: lightgray;
+}
+
+.incubadora-link {
+    display: block;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.incubadora-name {
+    display: block;
+    color: black;
+    /* margin: 5px 0; */
+    left: 0;
+    margin: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    text-overflow: ellipsis;
+}
+
+/* .btn-incubadora {
+    width: 500px;
+    height: 500px;
+} */
+
+.incubadora-img {
+    width: 100%;
+}
+
+.panel_registro_periodo {
+    background-color: #E5E5E5;
+    border-radius: 5px;
+    margin: 5px 0;
+    padding: 10px;
+}
+
+#panel-inicio {
+    display: none;
+}
+
+#panel-fin {
+    display: none;
+}
+
+#cuadro {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid black;
+    z-index: 9999;
+}
+
+#cerrar {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 991px) {
+    .menu img {
+        height: 200px;
+    }
+    .menu h2 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .logo {
+        width: 150px;
+    }
+    .menu img {
+        height: 100px;
+    }
+    .menu h2 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .menu {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
